@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>번호</th>
+        <th>메뉴</th>
+        <th>가격</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>김치볶음밥</td>
+        <td>8000원</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>오므라이스</td>
+        <td rowspan="2">9000원</td>  <!-- 행 병합 -->
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>돈까스</td>
+        <!-- 행을 병합했기 때문에 td 생성하지 않음 -->
+    </tr>
+    <tr>
+        <td>총 금액</td>
+        <td colspan="2">26000원</td>  <!-- 열 병합 -->
+        <!-- 열을 병합했기 때문에 열 생성하지 않음 -->
+    </tr>
+</table>
+</body>
+</html>
