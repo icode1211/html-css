@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>입력 요소 가상 클래스 선택자</title>
+    <style>
+        input:focus {
+            border: 2px solid blue;
+            background-color: #f2f2f2;
+        }
+
+        #agree:checked + label {
+            color: green;
+        }
+
+        button:disabled {
+            background-color: #cdcccc;
+        }
+
+        button:enabled {
+            background-color: #4caf50;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="이름을 입력하세요">
+
+    <input type="checkbox" id="agree">
+    <label for="agree">이용 약관에 동의합니다.</label>
+
+    <button disabled>비활성화된 버튼</button>
+
+    <button>활성화된 버튼</button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상요소선택자/링크가상클래스/동적가상클래스선택자</title>
+    <style>
+        /* 가상 요소 선택자 */
+        p::after {
+            content: "안녕!";
+            color: blue;
+        }
+
+        /* 링크 가상 클래스 선택자 : 방문한 적이 없는 링크일 경우 선택 */
+        a:link {
+            color: orange;
+        }
+
+        /*  링크 가상 클래스 선택자 : 방문한 적이 있는 링크일 경우  */
+        a:visited {
+            color: purple;
+        }
+
+        /* 동적 가상 클래스 선택자 : 버튼 클릭 상태일 때 */
+        button:active {
+            background-color: red;
+        }
+
+        /* 동적 가상 클래스 선택자 : 버튼을 마우스오버 했을 때 */
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>1</p>
+    <a href="https://ap-northeast-2.signin.aws.amazon.com/oauth?response_type=code&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fec2-tb&redirect_uri=https%3A%2F%2Fap-northeast-2.console.aws.amazon.com%2Fec2%2Fhome%3FhashArgs%3D%2523Instances%253A%26isauthcode%3Dtrue%26oauthStart%3D1738720115537%26region%3Dap-northeast-2%26state%3DhashArgsFromTB_ap-northeast-2_4a7e5b1a3ac9b379&forceMobileLayout=0&forceMobileApp=0&code_challenge=6dr-Y-pPAHKr9fB6Tq1xAXXTc9XXRt9_XpH90lwj1Us&code_challenge_method=SHA-256">구글 바로가기</a>
+    <button>버튼</button>
+</body>
+</html>
