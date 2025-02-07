@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인/회원정보입력 화면 구성하기</title>
+</head>
+<body>
+<!-- 1. 로그인 화면 -->
+    <h2>로그인</h2>
+    <form action="#" method="POST">
+        <input type="text" name="username" placeholder="아이디" required>
+        <input type="password" name="password" placeholder="비밀번호" required>
+        <button type="submit">로그인</button>
+    </form>
+    <br>
+    <br>
+<!--  2. 회원 정보 입력 화면 -->
+    <div class="group-box">
+        <fieldset>
+            <legend>필수 입력 정보</legend>
+            <p>
+                <label>
+                    아이디
+                    <input name="id" type="text">
+                </label>
+            </p>
+            <p>
+                <label>
+                    패스워드
+                    <input name="password" type="text">
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>선택 입력 정보</legend>
+            <p>
+                <label>
+                    생년월일
+                    <input name="birthday" type="date">
+                </label>
+            </p>
+            <p>
+                <label>
+                    성별
+                    <input name="gender" type="text">
+                </label>
+            </p>
+        </fieldset>
+    </div>
+</body>
+</html>
