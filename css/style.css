@@ -1,0 +1,18 @@
+body {
+    text-align: right;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.red-box {
+    background-color: red;
+}
+.green-box {
+    background-color: green;
+}
+.blue-box {
+    background: blue;
+}

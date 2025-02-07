@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position: relative</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .red-box {
+            background-color: red;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            z-index: 10;
+        }
+
+        .green-box {
+            background-color: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .blue-box {
+            background-color: blue;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스크롤에 따른 배경 동작 설정</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        .parent {
+            border: 1px solid black;
+        }
+
+        .children {
+            height: 200px;
+            /*background-image: url('https://tistory2.daumcdn.net/tistory/783187/skin/images/hover07.jpg');*/
+            background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEyMjlfMjg3%2FMDAxNzM1NDU2NjEwNDY2.Vji8o7xxE4DkxqeadNz9l93rKl1KCBcb8a62_Ou8XbMg.ZdngvlAVy7ntF1nK0uGRcRmnFultUGt5kjOuK3oEDmsg.JPEG%2Fim02.jpg&type=sc960_832');
+            background-attachment: local; /* local, scroll */
+            background-repeat: repeat;
+            background-position: center;
+            overflow-y: scroll;
+
+            /* background: <color 속성값> <image 속성값> <repeat 속성값> <position 속성값/size 속성값> <attachment 속성값>;*/
+            /*background: green url(https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340486286Jh4lB.png) no-repeat center / 20% fixed;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="children">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Autem, error! Id dolore officiis commodi est ad enim earum magnam possimus assumenda velit qui dignissimos eos nihil mollitia distinctio.</p>
+        </div>
+    </div>
+</body>
+</html>
