@@ -51,3 +51,33 @@ if (age >= 18) {
 } else {
     console.log("Minor")
 }
+
+
+/*  자바스크립트 day1 퀴즈: switch-case문 */
+let dayOfTheWeek = "금요일"
+switch (dayOfTheWeek) {
+    case "월요일":
+        console.log("Start of the work week");
+        break;
+    case "금요일":
+        console.log("Almost weekend");
+        break;
+    default:
+        console.log("Midweek");
+        break;
+}
+
+
+/* 자바스크립트 day1 퀴즈: if 조건절 */
+let temperature = 30
+if (temperature >= 30) {
+    console.log("정말 더운 날씨 입니다");
+} else if (temperature >= 25) {
+    console.log("더운 날씨 입니다");
+} else if (temperature >= 15) {
+    console.log("서늘한 날씨 입니다");
+} else if (temperature >= 0) {
+    console.log("시원한 날씨 입니다");
+} else {
+    console.log("정말 추운 날씨 입니다");
+}

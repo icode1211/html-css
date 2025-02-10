@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>반복문 실습 코드</title>
+</head>
+<body>
+    <h1>반복문 - while, do-while, for문 실습</h1>
+<script>
+    // 윤년 계산기 - while문 사용
+    // (2000년 부터 2030년 까지의 윤년을 구하세요)
+    // - 연도가 4로 나누어떨어지고 100으로 나누어떨어지지 않으면 윤년입니다.
+    // - 단, 연도가 400으로 나누어떨어지면 윤년입니다.
+
+    let year = 2000;
+    while (year <= 2030) {
+        if ((year % 4 === 0 && year % 100 !== 0)
+            || (year % 400 === 0)) {
+            console.log(`${year}년 - 윤년입니다!`);
+        }
+        year++;
+    }
+
+    /* for문 으로 배열 순회 */
+    let arr = ['banana', 'apple', 'orange', '요소1', '요소2', ''];
+
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+
+    for (let element in arr) {
+        console.log(element);
+    }
+
+    /* break; 문법 실습 */
+    for (let i = 0; i < 10; i++) {
+        console.log(i);
+        if (i === 5) {
+            break;
+        }
+    }
+
+    /* continue; 문법 실습 */
+    for (let i = 0; i <= 10; i++) {
+        if (i % 2 !== 0) {
+            continue;
+        }
+        console.log(i);
+    }
+</script>
+</body>
+</html>
