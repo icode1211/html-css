@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>노드 조회/조작하기</title>
+    <style>
+        .red-color {
+            color: red;
+        }
+        .fz20 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 컨텐츠/스타일 조작 실습 -->
+    <p id="myParagraph">Hello, <span style="display:none;">JavaScript!</span></p>
+
+    <!-- 클래스 조작 실습 -->
+    <p id="text">text</p>
+
+    <!-- data-* 속성 사용하여 동적 UI 변경 실습 -->
+    <ul>
+        <li data-color="red">빨강</li>
+        <li data-color="blue">파랑</li>
+        <li data-color="green">초록</li>
+    </ul>
+
+    <!-- (메소드로) 속성 조작 실습 -->
+    <a href="https://www.example.com">예시 링크</a>
+<script>
+    const myParagraph = document.getElementById("myParagraph");
+    console.log(myParagraph.textContent);
+    console.log(myParagraph.innerText);
+    console.log(myParagraph.innerHTML);
+
+    // myParagraph.textContent = "<b>안녕하세요!</b>";
+    // myParagraph.innerText = "<b>안녕하세요!</b>";
+    // myParagraph.innerHTML = "<b>안녕하세요!</b>";
+
+    myParagraph.style.backgroundColor = "blue";
+    myParagraph.style.color = "white";
+
+
+    /* 클래스 조작 실습 */
+    const text = document.querySelector('#text');
+    text.classList.add("red-color");
+    text.classList.add("fz-20");
+
+
+    /* data-* 속성 사용하여 동적 UI 변경 실습 */
+    document.querySelectorAll('li').forEach(element => {
+        element.addEventListener('click', function() {
+            document.body.style.backgroundColor = this.dataset.color;
+        })
+    })
+
+
+    /* (메소드로) 속성 조작 실습 */
+    const link = document.querySelector('a');
+    console.log(link.getAttribute('href'));
+
+    link.setAttribute('href', 'https://google.com');
+
+    link.removeAttribute('href');
+</script>
+</body>
+</html>

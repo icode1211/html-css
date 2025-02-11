@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1 id="title">title</h1>
+    <p class="text">text-1</p>
+    <p class="text">text-2</p>
+
+<script>
+    // id로 요소 찾기
+    const title = document.getElementById("title");
+    console.log(title);
+
+    // class로 요소 찾기
+    const text12 = document.getElementsByClassName("text");
+    console.log(text12);
+
+    // tag로 요소 찾기
+    const h1Tag = document.getElementsByTagName("h1");
+    console.log(h1Tag);
+</script>
+</body>
+</html>

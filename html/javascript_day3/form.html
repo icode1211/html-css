@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form 다루기</title>
+</head>
+<body>
+    <form name="frm1">
+        <label for="uname">이름</label>
+        <input type="text" id="uname" name="uname">
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age">
+        <label for="gender">성별</label>
+        <select id="gender" name="gender">
+            <option value="male">남성</option>
+            <option value="female">여성</option>
+        </select>
+        <textarea id="myTextArea" name="myTextArea"></textarea>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox" value="apple" checked>
+        <button type="submit">전송</button>
+    </form>
+    <br>
+
+    <form name="frm2">
+        <label><input type="radio" name="fruits" value="apple">사과</label>
+        <label><input type="radio" name="fruits" value="banana">바나나</label>
+        <label><input type="radio" name="fruits" value="orange">오렌지</label>
+        <label><input type="radio" name="fruits" value="melon" checked>멜론</label>
+    </form>
+<script>
+    console.log(document.frm1.elements['age']);
+    console.log(document.frm1.elements[3]);
+
+    /* 폼 요소의 입력 값 다루기 */
+    document.frm1.uname.value = "이름을 입력하세요";
+    document.frm1.age.value = "성별을 입력하세요";
+
+    document.getElementById('myTextArea').value = "여러 문장을 입력하는 textarea 입니다.";
+    document.frm1.myTextArea.value = "이것도 가능합니다";
+
+    // checkbox
+    const myCheckbox = document.getElementById('myCheckbox');
+    if (myCheckbox.checked === true) {
+        console.log(myCheckbox.value);  // apple
+    }
+
+    const radioList = document.querySelectorAll('[type="radio"]');
+    for (let i = 0; i < radioList.length; i++) {
+        if (radioList[i].checked === true) {
+            console.log(radioList[i].value);    // melon
+        }
+    }
+</script>
+</body>
+</html>

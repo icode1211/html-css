@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>노드 추가/삭제</title>
+</head>
+<body>
+    <div id="myDiv">
+
+    </div>
+    <p id="text">삭제 대상 태그</p>
+<script>
+    // myDiv 아이디를 가진 div 태그 안에 새로운 노드를 추가
+    // 1. 새로운 노드 생성, 2. myDiv 연결
+    const element = document.createElement('p');
+    const textNode = document.createTextNode("단락태그 안에 들어갈 텍스트입력!");
+    element.appendChild(textNode);
+
+    const myDiv = document.getElementById('myDiv');
+    myDiv.appendChild(element);
+
+    // p 태그 노드 삭제
+    const pElement = document.getElementById('text');
+    pElement.parentElement.removeChild(pElement);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>파일 업로드시 파일정보 출력하기</title>
+</head>
+<body>
+<form name="frm">
+    <input type="file" id="upload" name="upload">
+</form>
+<script>
+    const files = document.frm.upload.files;
+    console.log(files);
+
+    document.getElementById("upload").addEventListener("change", function(event) {
+        let files = event.target.files; // 업로드된 파일들 가져오기
+        let message = "";
+
+        if (files.length > 0) {
+            for (let file of files) {
+                message += `파일 이름: ${file.name}\n파일 크기: ${file.size} 바이트\n파일 타입: ${file.type}\n파일마지막수정일: ${file.lastModifiedDate}\n`;
+            }
+            alert(message);
+        } else {
+            alert("파일을 선택하세요!");
+        }
+    });
+</script>
+</body>
+</html>

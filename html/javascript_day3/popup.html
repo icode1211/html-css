@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>브라우저 새 창 띄우기 / 스크롤</title>
+    <style>
+        body {
+            width: 3000px;
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="popup()">팝업</button>
+
+<script>
+    function popup() {
+        window.open('https://google.com', '새창', 'width=300, height=300');  // 경로, 이름, 속성
+    }
+    window.scrollTo(100, 200);
+    window.scrollBy(300, 400);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="messageInput" placeholder="메시지를 입력 후 Enter!" />
+    <p id="messageOutput"></p>
+
+    <script>
+        document.getElementById("messageInput").addEventListener("keydown", function(event) {
+            console.log(event.key)
+            if (event.key === "Enter") { // Enter 키가 눌렸는지 확인
+                document.getElementById("messageOutput").textContent = `입력된 메시지: ${this.value}`;
+                this.value = ""; // 입력창 초기화
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자로 요소 가져오기</title>
+    <style>
+        .box-1 {
+            /* CSS 코드 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <p class="text">text-1</p>
+        <p class="text">text-2</p>
+    </div>
+    <div class="box-2">
+        <p class="text">text-3</p>
+        <p class="text">text-4</p>
+    </div>
+<script>
+    // box-1 클래스
+    let box1 = document.querySelector('.box-1');
+    console.log(box1);
+
+    // box-1 클래스 자식 노드 중에 text 클래스
+    let box1Text = document.querySelectorAll('.box-1 .text');
+    console.log(box1Text);
+</script>
+</body>
+</html>
